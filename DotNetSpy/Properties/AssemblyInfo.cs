@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DotNetSpy")]
 [assembly: AssemblyDescription("Warning: This computer program is protected by copyright law and international treaties. Unauthorized reproduction or distribution of this program, or any portion of it, may result in severe civil and criminal penalties, and will be prosecuted to the max.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Grapecity")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("DotNetSpy")]
-[assembly: AssemblyCopyright("Copyright © 2011 All rights reserved. ")]
+[assembly: AssemblyCopyright("Copyright © 2017 All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

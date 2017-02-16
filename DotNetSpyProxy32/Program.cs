@@ -40,7 +40,7 @@ namespace DotNetSpyProxy32
             }
             catch { return; }
 
-            new Thread(new ThreadStart(ActionThreadProc)).Start();
+            ThreadPool.QueueUserWorkItem(ActionThreadProc);
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
@@ -49,7 +49,7 @@ namespace DotNetSpyProxy32
 
         #region MemFileMapping
 
-        private static void ActionThreadProc()
+        private static void ActionThreadProc(object state)
         {
             string strMapData = string.Empty;
             while (DotNetSpyEventWaitHandle.WaitOne())
